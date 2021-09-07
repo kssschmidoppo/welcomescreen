@@ -77,36 +77,30 @@ export default {
 
 <style lang="scss">
 
-@import url("https://fonts.googleapis.com/css?family=Inter:wght@500;900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Inter:wght@500;900&display=swap);
 #app {
   background:#E8EFF4;;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #0f3e6d;
   margin-top: 60px;
-  height: 1920px;
-  width: 1080px;
-  margin: auto;
+  
   h1{
-    font-family: inherit;
     font-weight: 900;
     font-size:62px;
     line-height:75px;
-    color:#323D4A;
     margin:80px 0 20px 0;
+    color:#323D4A;
     } 
     #time { 
-        font-style:normal;
         font-weight: 500;
         font-size: 62px;
-        line-height: 75px;
         color:#9aa7b1;
         margin:0;     
       } 
       .entry{
-        padding:0;
+        padding-left:0;
       }
       .desktop{
         padding: 35px 40px;
@@ -116,13 +110,14 @@ export default {
         list-style:none;
         background: #0F05A0; 
         .timer{
+        font-weight: 900;
         font-size: 28px;
         color: #EB5E00;
         }
         .info{
           font-size: inherit;
           font-weight: 900;
-          font-style: bold;
+          margin:0;
           color: #ffbfab;
         }
         .description{
@@ -133,7 +128,6 @@ export default {
         footer{
           display: flex;
           position: fixed;
-          display: inline;
           box-sizing: border-box;
           justify-content: space-between;
           padding:40px;
@@ -142,13 +136,11 @@ export default {
           width: 100%;
           height: 130px;
           left: 0px;
-          top: 1790px;
           background: #FFFFFF
-            img {
+        }
+        img {
             height:50px
             }
-        }
-         
   
 }
 
