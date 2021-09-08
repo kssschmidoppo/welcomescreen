@@ -42,7 +42,6 @@ export default {
 
   computed: {
     filteredEntries(){
-      
       return[...this.entries].slice(1);
     }
 
@@ -78,7 +77,9 @@ export default {
 <style lang="scss">
 
 @import url(https://fonts.googleapis.com/css?family=Inter:wght@500;900&display=swap);
+
 #app {
+
   background:#E8EFF4;;
   font-family: "Inter", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -126,22 +127,23 @@ export default {
         }  
       }
         footer{
-          display: flex;
+          display: flex-wrap;
           position: fixed;
           box-sizing: border-box;
           justify-content: space-between;
           padding:40px;
           bottom:0;
-          padding:30;
           width: 100%;
-          height: 130px;
-          left: 0px;
+          left: 0;
           background: #FFFFFF
         }
         img {
             height:50px
             }
-  
-}
 
+}
+@media screen and (min-width: 480px) {
+  
+  #main {margin-left: 216px;}
+}
 </style>
